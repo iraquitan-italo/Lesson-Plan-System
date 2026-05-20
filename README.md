@@ -33,10 +33,10 @@ Sistema full-stack para criação, listagem, edição e exclusão de planos de a
 ✅ Validação rigorosa de dados com Joi  
 ✅ Arquitetura com Separação de Conceitos (SoC)
 ✅ Integração com Inteligência Artificial
-✅Containerização Completa
-✅Resiliência e Auto-Recovery: O Backend possui um sistema de Retry automático na inicialização
-✅Observabilidade e Logs Estruturados
-✅Health Check: Endpoint /health dedicado para checagem do status e uptime (tempo de atividade) do servidor, ideal para deploys na nuvem.
+✅ Containerização Completa
+✅ Resiliência e Auto-Recovery: O Backend possui um sistema de Retry automático na inicialização
+✅ Observabilidade e Logs Estruturados
+✅ Health Check: Endpoint /health dedicado para checagem do status e uptime (tempo de atividade) do servidor, ideal para deploys na nuvem.
 ---
 
 # 🏗️ Arquitetura e Boas Práticas
