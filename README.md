@@ -32,10 +32,10 @@ Sistema full-stack para criação, listagem, edição e exclusão de planos de a
 ✅ Estilização isolada com CSS Modules (Zero CSS Inline)  
 ✅ Validação rigorosa de dados com Joi  
 ✅ Arquitetura com Separação de Conceitos (SoC)
-✅ Integração com Inteligência Artificial, Assistente Pedagógico via Groq API: Integração com o modelo LLM (llama-3.1-8b-instant) para gerar sugestões valiosas para os professores.
-✅Containerização Completa: O projeto todo (Frontend em Vite/React, Backend em Node.js e Banco MySQL) sobe com um único comando usando Docker e Docker Compose.
-✅Resiliência e Auto-Recovery: O Backend possui um sistema de Retry automático na inicialização para aguardar o MySQL ficar "saudável" (healthy), evitando quedas no servidor (ECONNREFUSED).
-✅Observabilidade e Logs Estruturados: Monitoramento rigoroso das chamadas de Inteligência Artificial, gerando logs automáticos no terminal com o Título, Disciplina, Uso de Tokens e Latência (em segundos).
+✅ Integração com Inteligência Artificial
+✅Containerização Completa: O projeto todo (Frontend em Vite/React, Backend em Node.js e Banco MySQL)
+✅Resiliência e Auto-Recovery: O Backend possui um sistema de Retry automático na inicialização para aguardar o MySQL ficar "saudável".
+✅Observabilidade e Logs Estruturados: Monitoramento rigoroso das chamadas de Inteligência Artificial, gerando logs automáticos no terminal.
 ✅Health Check: Endpoint /health dedicado para checagem do status e uptime (tempo de atividade) do servidor, ideal para deploys na nuvem.
 ---
 
@@ -68,13 +68,16 @@ O projeto foi estruturado seguindo padrões rigorosos de mercado para garantir m
 # 📂 Estrutura do projeto
 
 ```bash
-smart-planner-ai/               
-├── backend/                    
-│   ├── config/
-│   │   └── db.js               
-│   ├── controllers/            
-│   ├── routes/                 
-│   ├── services/               
+Lesson-plan-System/               
+├── backend/ 
+│   │──src/                  
+│   │   ├── config/
+│   │   │   └── db.js               
+│   │   ├── controllers/
+│   │   │── middlewares/           
+│   │   ├── routes/                 
+│   │   ├── services/
+│   │   │── validators/               
 │   ├── .env                    
 │   ├── Dockerfile              
 │   ├── package.json            
@@ -83,8 +86,10 @@ smart-planner-ai/
 ├── frontend/                   
 │   ├── src/
 │   │   ├── components/        
-│   │   ├── pages/             
-│   │   ├── App.jsx             
+│   │   ├── pages/
+│   │   │── services/             
+│   │   ├── App.jsx
+│   │   │── App.module.css             
 │   │   └── main.jsx            
 │   ├── Dockerfile              
 │   ├── package.json           
