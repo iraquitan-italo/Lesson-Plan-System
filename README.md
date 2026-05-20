@@ -68,33 +68,32 @@ O projeto foi estruturado seguindo padrões rigorosos de mercado para garantir m
 # 📂 Estrutura do projeto
 
 ```bash
-src/
+smart-planner-ai/               
+├── backend/                    
+│   ├── config/
+│   │   └── db.js               
+│   ├── controllers/            
+│   ├── routes/                 
+│   ├── services/               
+│   ├── .env                    
+│   ├── Dockerfile              
+│   ├── package.json            
+│   └── server.js               
 │
-├── components/
-│   ├── Paginacao/
-│   │   ├── Paginacao.jsx
-│   │   └── Paginacao.module.css
-│   ├── PainelFiltros/
-│   │   ├── PainelFiltros.jsx
-│   │   └── PainelFiltros.module.css
-│   └── SmartAssistBtn/
-│       ├── SmartAssistBtn.jsx
-│       └── SmartAssistBtn.module.css
+├── frontend/                   
+│   ├── src/
+│   │   ├── components/        
+│   │   ├── pages/             
+│   │   ├── App.jsx             
+│   │   └── main.jsx            
+│   ├── Dockerfile              
+│   ├── package.json           
+│   └── vite.config.js          
 │
-├── pages/
-│   ├── FormPlano/
-│   │   ├── FormPlano.jsx
-│   │   └── FormPlano.module.css
-│   └── ListaPlanos/
-│       ├── ListaPlanos.jsx
-│       └── ListaPlanos.module.css
-│
-├── services/
-│   └── api.js
-│
-├── App.jsx
-├── App.module.css
-└── main.jsx
+├── .gitignore                  
+├── docker-compose.yml          
+├── README.md                   
+└── .env
 
 ⚙️ Instalação e Configuração
 
