@@ -33,9 +33,9 @@ Sistema full-stack para criação, listagem, edição e exclusão de planos de a
 ✅ Validação rigorosa de dados com Joi  
 ✅ Arquitetura com Separação de Conceitos (SoC)
 ✅ Integração com Inteligência Artificial
-✅Containerização Completa: O projeto todo (Frontend em Vite/React, Backend em Node.js e Banco MySQL)
-✅Resiliência e Auto-Recovery: O Backend possui um sistema de Retry automático na inicialização para aguardar o MySQL ficar "saudável".
-✅Observabilidade e Logs Estruturados: Monitoramento rigoroso das chamadas de Inteligência Artificial, gerando logs automáticos no terminal.
+✅Containerização Completa
+✅Resiliência e Auto-Recovery: O Backend possui um sistema de Retry automático na inicialização
+✅Observabilidade e Logs Estruturados
 ✅Health Check: Endpoint /health dedicado para checagem do status e uptime (tempo de atividade) do servidor, ideal para deploys na nuvem.
 ---
 
@@ -99,7 +99,7 @@ Lesson-plan-System/
 ├── docker-compose.yml          
 ├── README.md                   
 └── .env
-
+```
 ⚙️ Instalação e Configuração
 
 1. Clone o repositório
@@ -186,7 +186,7 @@ Com Docker você **não precisa instalar**:
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 sudo usermod -aG docker $USER
-
+```
 📌 Detalhes das Funcionalidades
 📥 Criar e Editar planos de aula
 Cadastro completo contendo campos obrigatórios de identificação e escopo pedagógico.
