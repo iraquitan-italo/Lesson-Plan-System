@@ -30,13 +30,12 @@ Sistema full-stack para criação, listagem, edição e exclusão de planos de a
 ✅ Ordenação dinâmica (Mais recentes ou Ordem alfabética)  
 ✅ Paginação dinâmica controlada pelo backend  
 ✅ Estilização isolada com CSS Modules (Zero CSS Inline)  
-✅ Validação rigorosa de dados com Joi  
+✅ Validação rigorosa de dados com Joi                                                                                                                             
+✅ Resiliência e Auto-Recovery                                                                                                                                     
+✅ Observabilidade e Logs Estruturados                                                                                                                             
+✅ Containerização Completa                                                                                                                                        
+✅ Health Check                                                                                                                                                   
 ✅ Arquitetura com Separação de Conceitos (SoC)
-✅ Integração com Inteligência Artificial
-✅ Containerização Completa
-✅ Resiliência e Auto-Recovery: O Backend possui um sistema de Retry automático na inicialização
-✅ Observabilidade e Logs Estruturados
-✅ Health Check: Endpoint /health dedicado para checagem do status e uptime (tempo de atividade) do servidor, ideal para deploys na nuvem.
 ---
 
 # 🏗️ Arquitetura e Boas Práticas
